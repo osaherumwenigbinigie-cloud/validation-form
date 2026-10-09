@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form class="card" id="signup-form" novalidate>
+
+    <h1>Add User</h1>
+
+    <p class="success" id="form-success" role="status" hidden>
+      Account created successfully! 🎉
+    </p>
+
+    <!-- Username -->
+    <div class="field">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username"
+             autocomplete="username" placeholder="     "
+             aria-describedby="username-error">
+      <p class="error" id="username-error" role="alert"></p>
+    </div>
+
+    <!-- Email -->
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email"
+             autocomplete="email" placeholder="    "
+             aria-describedby="email-error">
+      <p class="error" id="email-error" role="alert"></p>
+    </div>
+
+    <!-- Password -->
+    <div class="field">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password"
+             autocomplete="new-password" placeholder="    "
+             aria-describedby="password-error">
+      <p class="error" id="password-error" role="alert"></p>
+    </div>
+
+    <!-- Confirm password
+    <div class="field">
+      <label for="confirmPassword">Confirm password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword"
+             autocomplete="new-password" placeholder="••••••••"
+             aria-describedby="confirmPassword-error">
+      <p class="error" id="confirmPassword-error" role="alert"></p>
+    </div> -->
+
+    <!-- Terms -->
+    <div class="field field--checkbox">
+      <input type="checkbox" id="terms" name="terms" aria-describedby="terms-error">
+      <div class="field__body">
+        <label for="terms">I accept the Terms &amp; Conditions</label>
+        <p class="error" id="terms-error" role="alert"></p>
+      </div>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
